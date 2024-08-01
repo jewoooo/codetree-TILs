@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void    PrintStars(int n, int m) {
+void    PrintRec(int n, int m) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cout << "1";
@@ -15,6 +15,6 @@ int main() {
     int n, m;
 
     cin >> n >> m;
-    PrintStars(n, m);
+    PrintRec(n, m);
     return 0;
 }
