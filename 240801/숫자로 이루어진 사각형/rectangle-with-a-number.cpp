@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void    PrintRectangle(int n) {
+void    PrintNumRect(int n) {
     int num = 1;
+
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << num++ << " ";
@@ -18,6 +19,7 @@ int main() {
     int n;
 
     cin >> n;
-    PrintRectangle(n);
+
+    PrintNumRect(n);
     return 0;
 }
