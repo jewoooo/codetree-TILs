@@ -15,6 +15,6 @@ int main() {
     int n, m;
 
     cin >> n >> m;
-
+    PrintStars(n, m);
     return 0;
 }
