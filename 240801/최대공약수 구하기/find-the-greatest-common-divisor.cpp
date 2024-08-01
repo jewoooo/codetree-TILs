@@ -2,7 +2,9 @@
 #include <algorithm>
 using namespace std;
 
-void    FindGcd(int n, int m) {
+// 최대공약수 n, m 이 나누어떨어지는 수 중 제일 큰 수
+
+int FindGcd(int n, int m) {
     int gcd = 0;
 
     for (int i = 1; i <= min(n, m); i++) {
@@ -10,8 +12,7 @@ void    FindGcd(int n, int m) {
             gcd = i;
         }
     }
-
-    cout << gcd;
+    return (gcd);
 }
 
 int main() {
@@ -19,7 +20,6 @@ int main() {
     int n, m;
 
     cin >> n >> m;
-
-    FindGcd(n, m);
+    cout << FindGcd(n, m);
     return 0;
 }
