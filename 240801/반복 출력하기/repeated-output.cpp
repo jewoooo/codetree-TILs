@@ -1,13 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void    PrintStr() {
-    cout << "12345^&*()_\n";
-}
-
-void    PrintN(int n) {
+void    PrintNLines(int n) {
     for (int i = 0; i < n; i++) {
-        PrintStr();
+        cout << "12345^&*()_\n";
     }
 }
 
@@ -16,6 +12,6 @@ int main() {
     int n;
 
     cin >> n;
-    PrintN(n);
+    PrintNLines(n);
     return 0;
 }
